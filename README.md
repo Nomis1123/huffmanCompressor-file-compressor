@@ -23,15 +23,6 @@ This project is a from-scratch implementation of the classic Huffman coding algo
     *   The project includes a comprehensive test suite using `pytest` and the `hypothesis` library.
     *   Tests verify not just simple cases but the fundamental properties of the implementation, including a crucial "round-trip" test that ensures `decompress(compress(data)) == data` for any binary input.
 
-## Architecture
-
-The system is logically divided into several modules, separating the core data structure, the main algorithm logic, and low-level utilities.
-
-*   `compress.py`: The main module containing the core logic for the Huffman algorithm. It includes functions for building the frequency dictionary, constructing the tree, generating codes, and handling the compression/decompression file I/O.
-*   `huffman.py`: Defines the `HuffmanTree` class, a recursive node-based data structure used to build the prefix-code tree.
-*   `utils.py`: A utility module providing essential helper functions for low-level, bit-level manipulation, such as converting between bytes and their string representations (`byte_to_bits`, `bits_to_byte`).
-*   `test_huffman_properties_basic.py`: The test suite using `pytest` and `hypothesis` to ensure the correctness and robustness of the compression and decompression algorithms.
-
 ## The `.huf` Custom File Format
 
 The compressor generates files with a custom `.huf` extension. The file has a simple header followed by the data payload, allowing it to be self-contained and easily decompressed.
