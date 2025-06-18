@@ -1,4 +1,4 @@
-# Huffman Compressor - A File Compression Tool in Python
+# Huffman Compressor - A File Compression Tool
 
 This project is a from-scratch implementation of the classic Huffman coding algorithm for lossless data compression, written entirely in Python. It is designed to demonstrate a deep understanding of core computer science concepts, including data structures (binary trees, priority queues), algorithmic design, bit-level data manipulation, file I/O, and robust, property-based testing.
 
